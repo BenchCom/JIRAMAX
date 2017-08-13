@@ -3,7 +3,7 @@
 	alert("JiraMax_test");
 
 	var issueKey = getIssueKey();
-	if (issueKey == '') {
+	if (issueKey != '') {
 		alert(issueKey);
 	} else {
 		alert('JIRA issueKey not found!');
