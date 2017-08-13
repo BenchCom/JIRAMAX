@@ -16,10 +16,8 @@
 	var authKey = btoa(userName + ':' + password);
 
 	alert(authKey);
-
-	/*
-	 * initJobBudgetLines(); createJobBudgetLines();
-	 */
+	
+	var job = getJobNumber();
 
 	function getIssueKey() {
 		// <meta name="ajs-issue-key" content="......">
@@ -27,6 +25,26 @@
 		for (i = 0; i < metas.length; i++) {
 			if (metas[i].getAttribute('name') == 'ajs-issue-key') {
 				return metas[i].getAttribute('content');
+			}
+		}
+		return '';
+	}
+	
+	function getJobNumber() {
+		var jiraProjectNumber = issueKey.substring(0, issueKey.indexOf('-'));
+		if (jiraProject.length > 0) {
+			alert(jiraProject);
+			switch (jiraProject) {
+				case: 'HDASB'
+					return 'ASB';
+				case: 'HDASE'
+					return 'ASE';
+				case: 'HDJIC'
+					return 'JIC';
+				case: 'HDKSB'
+					return 'KSB'; 
+				case: 'COKOLI'
+					return 'cokoli';
 			}
 		}
 		return '';
