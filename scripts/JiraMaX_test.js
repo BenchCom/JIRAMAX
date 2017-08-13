@@ -21,8 +21,8 @@
 		return;
 	}
 	
-	if (!confirm('Job Budget Lines do not exist yet for ' + issueKey + ' ticket.\n' 
-			   + 'Do you want to create them now?') {
+	if (!confirm('Job Budget Lines do not exist yet for ' + issueKey + '.\n' 
+			   + 'Do you want to create them now?')) {
 		return;
 	};
 	
