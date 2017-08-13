@@ -1,5 +1,5 @@
 (function() {
-	
+
 	alert("JiraMax_test");
 
 	var issueKey = getIssueKey();
@@ -16,7 +16,7 @@
 	var authKey = btoa(userName + ':' + password);
 
 	alert(authKey);
-	
+
 	var job = getJobNumber();
 
 	function getIssueKey() {
@@ -29,21 +29,21 @@
 		}
 		return '';
 	}
-	
+
 	function getJobNumber() {
 		var jiraProjectNumber = issueKey.substring(0, issueKey.indexOf('-'));
 		if (jiraProject.length > 0) {
 			alert(jiraProject);
 			switch (jiraProject) {
-				case: 'HDASB'
+				case 'HDASB':
 					return 'ASB';
-				case: 'HDASE'
+				case 'HDASE':
 					return 'ASE';
-				case: 'HDJIC'
+				case 'HDJIC':
 					return 'JIC';
-				case: 'HDKSB'
-					return 'KSB'; 
-				case: 'COKOLI'
+				case 'HDKSB':
+					return 'KSB';
+				case 'COKOLI':
 					return 'cokoli';
 			}
 		}
