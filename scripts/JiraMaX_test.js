@@ -16,9 +16,8 @@ var authKey = btoa(userName + ':' + password);
 alert(authKey);
 
 /*
-initJobBudgetLines();
-createJobBudgetLines();
-*/
+ * initJobBudgetLines(); createJobBudgetLines();
+ */
 
 function getIssueKey() {
 	// <meta name="ajs-issue-key" content="......">
@@ -30,5 +29,3 @@ function getIssueKey() {
 	}
 	return '';
 }
-
-
