@@ -1,1 +1,1 @@
-alert("no nazdar");
+alert("No nazdar");
