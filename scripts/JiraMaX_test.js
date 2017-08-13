@@ -5,7 +5,7 @@ if (issueKey == '') {
 	alert(issueKey);
 } else {
 	alert('JIRA issueKey not found!');
-	return false;
+	return;
 }
 
 var macoHost = '';
