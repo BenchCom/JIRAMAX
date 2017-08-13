@@ -31,20 +31,15 @@
 	}
 
 	function getJobNumber() {
-		var jiraProjectNumber = issueKey.substring(0, issueKey.indexOf('-'));
+		var jiraProject = issueKey.substring(0, issueKey.indexOf('-'));
 		if (jiraProject.length > 0) {
 			alert(jiraProject);
 			switch (jiraProject) {
-				case 'HDASB':
-					return 'ASB';
-				case 'HDASE':
-					return 'ASE';
-				case 'HDJIC':
-					return 'JIC';
-				case 'HDKSB':
-					return 'KSB';
-				case 'COKOLI':
-					return 'cokoli';
+				case 'HDASB': return 'ASB';
+				case 'HDASE': return 'ASE';
+				case 'HDJIC': return 'JIC';
+				case 'HDKSB': return 'KSB';
+				case 'HDNIC': return 'NIC';
 			}
 		}
 		return '';
