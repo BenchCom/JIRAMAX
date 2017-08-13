@@ -5,9 +5,12 @@ alert("JiraMax_test");
 var jiraMax_issueKey = jiraMax_getIssueKey();
 alert(jiraMax_issueKey);
 
-jiraMax_getIssueKey() {
-	var jiraMax_metas = document.querySelector('meta');
+function jiraMax_getIssueKey() {
+	var jiraMax_metas = document.getElementsByTagName('meta');
+    // alert(jiraMax_metas);
+    // alert(jiraMax_metas.length);
 	for (i  = 0; i < jiraMax_metas.length; i++) {
+    		// alert(jiraMax_metas[i].getAttribute('name'));
 			if (jiraMax_metas[i].getAttribute('name') == 'ajs-issue-key') {
 				return jiraMax_metas[i].getAttribute('content');
 			}
